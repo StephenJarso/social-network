@@ -3,8 +3,8 @@ package handlers
 import (
 	"encoding/json"
 	"net/http"
-	"social-network/internal/models"
-	"social-network/internal/services"
+	"backend/internal/models"
+	"backend/internal/services"
 	"time"
 
 	"github.com/google/uuid"

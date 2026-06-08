@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 	"database/sql"
-	"social-network/internal/models"
+	"backend/internal/models"
 
 	"github.com/google/uuid"
 )
