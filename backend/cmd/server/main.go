@@ -1,7 +1,7 @@
 package main
 
 import (
-	
+	"log"
 
 	"backend/pkg/db"
 )
@@ -11,14 +11,9 @@ func main() {
 	// Application configuration
 	// -----------------------------
 
-	dbConfig := db.Config{
-		FilePath:        "data/app.db",
-		MaxOpenConns:    10,
-		MaxIdleConns:    5,
-		ConnMaxLifetime: time.Hour,
-	}
+	dbConfig := db.DefaultConfig("data/app.db")
 
-	serverAddr := ":8080"
+	//serverAddr := ":8080"
 
 	// -----------------------------
 	// Initialize database
@@ -31,6 +26,4 @@ func main() {
 	defer database.Close()
 
 	log.Println("database connected")
-
-	
 }
