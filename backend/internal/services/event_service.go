@@ -3,8 +3,8 @@ package services
 import (
 	"context"
 	"errors"
-	"social-network/internal/models"
-	"social-network/internal/repository"
+	"backend/internal/models"
+	"backend/internal/repository"
 	"time"
 
 	"github.com/google/uuid"
